@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url(bg1.jpg)no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+.form{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    background: rgba(255,255,255,0.8);
+    max-width: 500px;
+    max-height: 660px;
+    margin: 45px auto 200px;
+    margin-left: 494px;
+    padding: 10px 15px 10px 15px; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+.form b{
+    font-size: 30px;
+}
+.form strong{
+    font-size: 15px;
+}
+.form p{
+    font-size: 25px;
+    padding: 1px;
+    text-align: center;
+}
+.form select{
+    outline: 0;
+    border-radius: 10px;
+    background: #F2F2F2;
+    width: 300px;
+    border: 0;
+    margin: 0 15px 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+
+.form input[type=text], input[type=number],input[type=email]{ 
+    outline: 0;
+    border-radius: 10px;
+    background: #F2F2F2;
+    width: 300px;
+    border: 0;
+    margin: 0 15px 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form textarea:hover,.form select:hover{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.form input:hover,.form select:hover{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.form textarea:focus , .form select:focus{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.form input:focus , .form select:focus{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.form button{
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 10px;
+    background: #49e51a;
+    width: 200px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0 15px 0;
+    cursor: pointer;
+}
+.form button:hover, .form button:active, .form button:focus{
+    background-color: #06C5CF;
+    transition: all 1s ease 0s;
+}
+::placeholder{
+    color: black;
+}

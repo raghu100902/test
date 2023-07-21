@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADD A NEW ADDRESS</title>
+    <link rel="stylesheet" type="text/css" href="address.css">
+</head>
+<script>
+
+    function pay(){
+    var n = document.getElementById("name").value
+    var mnum = document.getElementById("number").value
+    var add1 = document.getElementById("add1").value
+    var add2 = document.getElementById("add2").value
+    var dist = document.getElementById("Dist").value
+    var st = document.getElementById("state").value
+    var c = document.getElementById("country").value
+    var pc = document.getElementById("pin").value
+
+     var dets={"name":n,"mobile":mnum,"add1":add1,"add2":add2,"district":dist,"state":st,"country":c,"pin":pc}
+                 console.log(dets)
+                 var paydetails=localStorage.getItem("paydetails")
+                
+                var detail=JSON.parse(paydetails||"[]")
+                detail.push(dets)
+                localStorage.setItem("paydetails",JSON.stringify(detail))
+                localStorage.setItem("currentn","")
+                localStorage.setItem("currentn",n)
+                JSON.stringify(localStorage.setItem("number",mnum))
+                localStorage.setItem("add1","")
+                localStorage.setItem("add1",add1)
+                localStorage.setItem("add2","")
+                localStorage.setItem("add2",add2)
+                localStorage.setItem("dist","")
+                localStorage.setItem("dist",dist)
+                localStorage.setItem("state","")
+                localStorage.setItem("state",st)
+                localStorage.setItem("country","")
+                JSON.stringify(localStorage.setItem("country",c))
+                JSON.stringify(localStorage.setItem("pin",pc))
+
+    }
+    
+   
+                
+                
+
+
+
+
+
+
+
+</script>
+<body>
+    <div class="form">
+          <center><p><b>ADD ADDRESS</b></p></center> 
+    <form action="payment gateway.html">
+    <pre>
+<center>
+<input required type="text" id="name" placeholder="Enter name"><input required type="number" id="number" placeholder="Mobile number">
+<p>Flat, House no.,Building,Company,Apartment</p><textarea required id="add1" rows="1" cols="100"></textarea>
+<p>Area,Colony,Street,Sector,Village</p><textarea required id="add2" rows="1" cols="100"></textarea><br>
+<input required type="text" name="Your town" placeholder="Your City"><input required type="text" id="Dist" placeholder="Your District">
+<input required type="text" id="state" placeholder="State"><select required ><option id="country" value=""selected hidden disabled>Country</option> <option value="India">India</option> <option value="Singapore">Singapore</option> <option value="Qatar">Qatar</option> </select>
+<input required type="number" id="pin" placeholder="PIN code"><select required ><option value=""selected hidden disabled>Select an address type</option> <option value="Home (7 am - 9 pm delivery)">Home (7 am - 9 pm delivery)</option> <option value="Office/Commercial (10 AM-6 PM delivery)">Office/Commercial (10 AM-6 PM delivery)</option></select>
+            <br><button type="submit" onclick="pay()"><strong>Make Payment</strong></button>
+</center>
+        </pre>
+       
+    </form>
+    </div>
+    </body>
+    
+
+
+
+    </html>

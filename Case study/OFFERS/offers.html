@@ -1,0 +1,325 @@
+<html>
+    <head>
+        <title> EXCITING OFFERS! </title>
+        <style>
+          .menu {
+            background-color: black;
+          }
+          
+          .menu a::after{
+          content: '';
+          
+          width: 0%;
+          
+          height: 3px;
+          
+          
+          background: red;
+          
+          display: block;
+          margin: auto;
+          
+          transition: 0.75s;
+          
+          }
+          .menu::after{
+          content: '';
+          
+          width:100%;
+          
+          height: 2px;
+          
+          
+          background: red;
+          
+          display: block;
+          margin: auto;
+          
+          }
+          .menu a:hover::after{
+           width: 100%;
+          }
+           .menu a:hover{
+             background-color: violet; font-size: x-large; 
+          }
+          
+          
+          </style>
+          </head>
+          <body style="background-image:url(bg4.jpeg);
+          background-size: 100% 100%;margin: 0px">
+           
+              
+          <div class="menu">
+            <table style="background-color:black;" cellspacing="20">
+                  <tr>
+                      <td style="width: 40px;"><img src="cayn1.PNG" alt="cayn logo"></td>
+                      <td><a href="../Home page/home.html"style="text-decoration:none"><span style="color: white; font-size: large";>HOME</span></a></td>
+                      <td><a href="../About Us/about us.html"style="text-decoration:none"><span style="color: white; font-size: large";>ABOUT US</span></a></td>
+                      <td><a href="../PRIVACY/privacy policy.html"style="text-decoration:none"><span style="color: white; font-size: large">PRIVACY POLICY</span></a></td>
+                      <td><a href="../LOGIN AND SIGNUP/login.html"style="text-decoration:none"><span style="color: white;font-size: large">LOGIN</span></a></td>
+                      <td><a href="../LOGIN AND SIGNUP/Sign up.html"style="text-decoration:none"><span style="color: white;font-size: large">SIGN UP</span></a></td>
+                      <TD style="width:250px ;"> </TD>
+                      <td><a href="" style = "text-decoration: none"><span id="cr" style="color: white;font-size: x-large"></span></a></td>
+                      <TD style="width: 0px"> </TD>
+                      <td><img src="cart.PNG" alt="add to cart" usemap="#ac"><map name="ac"><area shape="rect" coords="0,0,159,72" href="../Add to cart/addcart.html"></map></td>
+               </tr></table>
+              </div> 
+    <link rel="stylesheet" href="slideshow.css">
+    </head>
+<body>
+</div>
+<!-- image slider start -->
+<div class="slider">
+<div class="slides">   
+<!-- radio buttons start -->
+<input type = "radio" name="radio-btn" id="radio1">
+<input type = "radio" name="radio-btn" id="radio2">
+<input type = "radio" name="radio-btn" id="radio3">
+<input type = "radio" name="radio-btn" id="radio4">
+<input type = "radio" name="radio-btn" id="radio5">
+<!-- radio buttons end -->
+<!-- slide images start -->
+<div class="slide first">
+<img src="../Home page/7.jpg" alt="Samsung galaxy Zfold" usemap="#zfd">
+<map name="zfd">
+  <area shape="rect" coords="0,0,1890,702" alt="zfold" >
+</map>
+</div>
+<div class="slide">
+<img src="off1.jpg" alt="" usemap="#iph">
+<map name="iph">
+ <area shape="rect" coords="0,0,1890,702" alt="iphone display" href="#laptop">
+</map>
+</div>
+<div class="slide">
+<img src="off2.jpg" alt="OnePlus 9pro" usemap="#op">
+<map name="op">
+ <area shape="rect" coords="0,0,1890,702" alt="oneplus display" href="#watch">
+</map></div>
+<div class="slide">
+    <img src="off4.jpg" alt="" usemap="#vf">
+    <map name="vf">
+     <area shape="rect" coords="0,0,1890,702" alt="iphone display" href="#tv">
+    </map>
+</div>
+<div class="slide">
+  <img src="off5.jpg" alt="mobile" usemap="#mobile">
+  <map name="mobile">
+   <area shape="rect" coords="0,0,1890,702" alt="iphone display" href="#phone">
+  </map>
+</div>
+<!--slide images end-->
+<!--automatic navigation start-->
+<div class="navigation-auto">
+       <div class="auto-btn1"></div>
+       <div class="auto-btn2"></div>
+       <div class="auto-btn3"></div>
+       <div class="auto-btn4"></div>
+       <div class="auto-btn5"></div>
+</div>
+<!--automatic navigation end-->
+</div>
+<!--manual navigation start-->
+<div class="navigation-manual">
+   <label for="radio1" class="manual-btn"></label>
+   <label for="radio2" class="manual-btn"></label>
+   <label for="radio3" class="manual-btn"></label>
+   <label for="radio4" class="manual-btn"></label>
+   <label for="radio5" class="manual-btn"></label>
+ </div>
+<!--manual navigation end-->
+</div>
+<!-- image slider end -->
+
+
+
+
+ <script type="text/javascript">
+   var counter = 1;
+   setInterval(function(){
+     document.getElementById('radio' + counter).checked = true;
+     counter++;
+     if(counter > 3){
+       counter = 1;
+     }
+   }, 3000);
+   </script>
+<center>
+    <p style="font-family: Arial;font-weight: bold;font-size: 40;color: white;background-color: black;width: 1515.55px;">UNBEATABLE OFFERS</p>
+    <p id="laptop"></p>
+    <pre><span style="font-family: Arial;font-weight: bold;font-size: 30;color: white;background-color: black;"> LAPTOPS </span></pre>
+    <table cellspacing="20" border="0"> 
+      <tr>
+        <td>
+            <img src="Asus ROG.jpg" width="300px" height="300px" usemap="#g1"><br>
+            <center><p style="font-family: Arial;font-size: 25px;"><b>ASUS ROG Zephyrus G14</b></p></center>
+            <map name="g1">
+            <area shape="rect" coords="0,0,390,390" alt="Asus ROG" href="Asus ROG Zephyrus G14.html">
+            </map>
+        </td>
+        <td>
+            <img src="DELL Alienware M15 R2.jpg" width="300px" height="300px" usemap="#g2">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>DELL Alienware M15 R2</b></p></center>
+            <map name="g2">
+            <area shape="rect" coords="0,0,390,390" alt="DELL Alienware M15 R2" href="DELL Alienware M15 R2.html">
+            </map>
+        </td>
+        <td>
+            <img src="2020 Apple MacBook Pro.jpg" width="300px" height="300px" usemap="#g3">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>2020 Apple MacBook Pro</b></p></center>
+            <map name="g3">
+            <area shape="rect" coords="0,0,390,390" alt="2020 Apple MacBook Pro" href="2020 Apple MacBook Pro.html">
+            </map>
+        </td>
+        <td>
+          <img src="DELL XPS 9310.jpg" width="300px" height="300px" usemap="#g4">
+          <center><p style="font-family: Arial;font-size: 25px;"><b>DELL XPS 9310</b></p></center>
+          <map name="g4">
+          <area shape="rect" coords="0,0,390,390" alt="DELL XPS 9310" href="Dell XPS 9310 .html">
+          </map>
+      </td>
+    </tr>
+    </table><hr>
+    <p id="watch"></p>
+    <pre><span style="font-family: Arial;font-weight: bold;font-size: 30;color: white;background-color: black;"> WATCHES </span></pre>
+    <table cellspacing="15" cellpadding="10" border="0"> 
+      <tr>
+        <td>
+          <pre>     <img src="../Samsung/samsung watch active 2.jpg" width="220px" height="310px" usemap="#p1"></pre>
+          <p style="font-family: Arial;font-size: 25px;"><b>Samsung watch active 2</b></p>
+          <map name="p1">
+          <area shape="rect" coords="0,0,390,390" alt="Samsung watch active 2" href="../Samsung/samsung active 2.html">
+          </map>
+      </td>
+        <td>
+            <img src="../APPLE/apple watch nike.jpg" width="250px" height="300px" usemap="#apple watch nike">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>Apple watch Nike</b></p></center>
+            <map name="apple watch nike">
+            <area shape="rect" coords="0,0,390,390" alt="apple watch nike" href="../APPLE/apple watch nike.html">
+            </map>
+        </td>
+        <td>
+            <img src="../APPLE/apple watch se gps.jpg" width="250px" height="300px" usemap="#apple watch se gps">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>Apple watch SE</b></p></center>
+            <map name="apple watch se gps">
+            <area shape="rect" coords="0,0,390,390" alt="apple watch se gps" href="../APPLE/apple watch se gps.html">
+            </map>
+        </td>
+        <td>
+            <img src="../APPLE/apple watch 6 gps.jpg" width="250px" height="300px" usemap="#apple watch 6 gps">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>Apple watch 6 </b></p></center>
+            <map name="apple watch 6 gps">
+            <area shape="rect" coords="0,0,390,390" alt="apple watch 6 gps" href="../APPLE/apple watch 6 gps.html">
+            </map>
+        </td>
+        <td>
+          <img src="../Samsung/samsung gear s3.jpg" width="220px" height="300px" usemap="#p2">
+          <center><p style="font-family: Arial;font-size: 25px;"><b>Samsung gear S3</b></p></center>
+          <map name="p2">
+          <area shape="rect" coords="0,0,390,390" alt="samsung gear s3" href="../Samsung/samsung gear s3.html">
+          </map>
+      </td>
+    </tr>
+    </table><hr>
+    <p id="phone"></p>
+    <pre><span style="font-family: Arial;font-weight: bold;font-size: 30;color: white;background-color: black;"> SMARTPHONES </span></pre>
+    <table cellspacing="15" border="0"> 
+      <tr>
+        <td>
+          <pre>   <img src="../Vivo/4.jpg" width="300px" height="350px" usemap="#c1"></pre>
+          <center><p style="font-family: Arial;font-size: 25px;"><b>VIVO V20 pro</b></p></center>
+          <map name="c1">
+          <area shape="rect" coords="0,0,390,390" alt="V20 pro" href="../Vivo/v20 pro.html">
+          </map>
+      </td>
+        <td>
+            <img src="../ONE PLUS/13.jpg" width="300px" height="350px" usemap="#one plus 9 pro">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>OnePlus 9 Pro</b></p></center>
+            <map name="one plus 9 pro">
+            <area shape="rect" coords="0,0,390,390" alt="one plus 9 pro" href="../ONE PLUS/OnePlus 9 Pro.html">
+            </map>
+        </td>
+        <td>
+            <img src="../Samsung/23.png" width="300px" height="350px" usemap="#samsung z fold">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>Samsung Z fold</b></p></center>
+            <map name="samsung z fold">
+            <area shape="rect" coords="0,0,390,390" alt="samsung z fold" href="../Samsung/ZFOLD.html">
+            </map>
+        </td>
+        <td>
+            <img src="../APPLE/14.PNG" width="250px" height="350px" usemap="#iphone 12 pro">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>iPhone 12 Pro</b></p></center>
+            <map name="iphone 12 pro">
+            <area shape="rect" coords="0,0,390,390" alt="iphone 12 pro" href="../APPLE/IPhone 12 pro.html">
+            </map>
+        </td>
+        <td>
+          <img src="../Xiaomi/Mi 10T Pro.jpg" width="240px" height="350px" usemap="#d1">
+          <center><p style="font-family: Arial;font-size: 25px;"><b>Mi 10T Pro</b></p></center>
+          <map name="d2">
+          <area shape="rect" coords="0,0,390,390" alt="Mi 10T Pro" href="../Xiaomi/Mi 10T Pro.html">
+          </map>
+      </td>
+    </tr>
+    </table><hr><br><br>
+    <p id="tv"></p>
+    <pre><span style="font-family: Arial;font-weight: bold;font-size: 50;color: white;background-color: black;"> SMART TV'S </span></pre>
+    <table cellspacing="25" cellpadding="20" border="0">
+      <tr>
+        <td>
+            <pre><img src="Samsung tv.jpg" width="370px" height="370px" usemap="#samsungtv"></pre>
+            <center><p style="font-family: Arial;font-size: 25px;"><b>Samsung QN85A Neo QLED <br>4K Smart</b></p></center>
+            <map name="samsungtv">
+            <area shape="rect" coords="0,0,390,390" alt="samsungtv" href="samsung tv.html">
+            </map>
+        </td>
+        <td>
+            <img src="sony43.jpg" width="370px" height="370px" usemap="#sony 43">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>Sony Bravia 108 cm (43 inches)</b></p></center>
+            <map name="sony 43">
+            <area shape="rect" coords="0,0,390,390" alt="sony 43" href="sony 43.html">
+            </map>
+        </td>
+        <td>
+            <img src="sony bravia 65inches.jpg" width="370px" height="370px" usemap="#sony 65">
+            <center><p style="font-family: Arial;font-size: 25px;"><b>Sony Bravia 164 cm (65 inches)</b></p></center>
+            <map name="sony 65">
+            <area shape="rect" coords="0,0,390,390" alt="sony 65" href="sony 65.html">
+            </map>
+        </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="sony bravia 75inches.jpg" width="370px" height="370px" usemap="#sony 75">
+        <p style="font-family: Arial;font-size: 25px;"><b>Sony Bravia 189 cm (75 inches) </b></p>
+        <map name="sony 75">
+        <area shape="rect" coords="0,0,390,390" alt="sony 75" href="sony 75.html">
+        </map>
+    </td>
+    <td>
+        <img src="sony85.png" width="370px" height="370px" usemap="#sony bravia 85inches">
+        <pre><p style="font-family: Arial;font-size: 25px;"><b>Sony Bravia 214.8 cm (85 inches)</b></p></pre>
+        <map name="sony bravia 85inches">
+        <area shape="rect" coords="0,0,390,390" alt="" href="sony85 inches.html">
+        </map>
+    </td>
+    <td>
+        <img src="sony32.png" width="370px" height="370px" usemap="#sony bravia 32inches">
+        <center><p style="font-family: Arial;font-size: 25px;"><b>Sony Bravia 80 cm (32 inches)</b></p></center>
+        <map name="sony bravia 32inches">
+        <area shape="rect" coords="0,0,390,390" alt="sony bravia 32inches" href="sony 1tv.html">
+        </map>
+    </td>
+    </tr>
+    </table>
+</center>
+<script>
+  var users=localStorage.getItem("currentName")
+  document.getElementById("cr").innerHTML = "Hello, " + users
+</script>
+
+
+
+</body>
+</html>

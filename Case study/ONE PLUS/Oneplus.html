@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <style>
+            .menu {
+              background-color: black;
+            }
+            
+            .menu a::after{
+            content: '';
+            
+            width: 0%;
+            
+            height: 3px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            transition: 0.75s;
+            
+            }
+            .menu::after{
+            content: '';
+            
+            width:100%;
+            
+            height: 2px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            }
+            .menu a:hover::after{
+             width: 100%;
+            }
+             .menu a:hover{
+               background-color: violet; font-size: x-large; 
+            }
+            
+            
+            </style>
+            </head>
+            <body style="background-image:url(bg4.jpeg);
+            background-size: 100% 100%;margin: 0px">
+             
+                
+            <div class="menu">
+              <table style="background-color:black;" cellspacing="20">
+                    <tr>
+                        <td style="width: 40px;"><img src="cayn1.PNG" alt="cayn logo"></td>
+                        <td><a href="../Home page/home.html"style="text-decoration:none"><span style="color: white; font-size: large";>HOME</span></a></td>
+                        <td><a href="../About Us/about us.html"style="text-decoration:none"><span style="color: white; font-size: large";>ABOUT US</span></a></td>
+                        <td><a href="../PRIVACY/privacy policy.html"style="text-decoration:none"><span style="color: white; font-size: large">PRIVACY POLICY</span></a></td>
+                        <td><a href="../LOGIN AND SIGNUP/login.html"style="text-decoration:none"><span style="color: white;font-size: large">LOGIN</span></a></td>
+                        <td><a href="../LOGIN AND SIGNUP/Sign up.html"style="text-decoration:none"><span style="color: white;font-size: large">SIGN UP</span></a></td>
+                        <TD style="width:250px ;"> </TD>
+                        <td><a href="" style = "text-decoration: none"><span id="cr" style="color: white;font-size: x-large"></span></a></td>
+                        <TD style="width: 0px"> </TD>
+                        <td><img src="cart.PNG" alt="add to cart" usemap="#ac"><map name="ac"><area shape="rect" coords="0,0,159,72" href="../Add to cart/addcart.html"></map></td>
+                 </tr></table>
+                </div> 
+ <br> <br>
+    <center><table cellspacing="10" border="0">
+        <caption><span style="font-weight:bolder ;font-family:Arial;font-size: 50px;color:red;">ONE PLUS</span></caption>
+        <tr bgcolor="white"><th></th><th></th></tr>
+        <tr>
+            <td>
+                <img src="1.jpeg" width="400px" height="550px" usemap="#ONEPLUS 9">
+                <map name="ONEPLUS 9">
+                <area shape="rect" coords="0,0,438,610" alt="ONEPLUS 9" href="One plus 9 5G.html">
+                </map>
+            </td>
+            <td>
+                <img src="2.PNG" width="400px" height="550px" usemap="#ONEPLUS 9R">
+                <map name="ONEPLUS 9R">
+                <area shape="rect" coords="0,0,438,610" alt="ONEPLUS 9R" href="OnePlus 9 Pro.html">
+                </map>
+            </td>
+            <td>
+                <img src="3.png" width="400px" height="550px" usemap="#ONEPLUS 9PRO">
+                <map name="ONEPLUS 9PRO">
+                <area shape="rect" coords="0,0,438,610" alt="ONEPLUS 9PRO" href="OnePlus 9 Pro.html">
+                </map>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="4.png" width="400px" height="550px" usemap="#ONEPLUS 8T">
+                <map name="ONEPLUS 8T">
+                <area shape="rect" coords="0,0,438,610" alt="ONEPLUS 8T" href="OnePlus 8T.html">
+                </map>
+            </td>
+            <td>
+                <img src="6.png" width="400px" height="550px" usemap="#ONEPLUS NORD">
+                <map name="ONEPLUS NORD">
+                <area shape="rect" coords="0,0,438,610" alt="ONEPLUS NORD" href="OnePlus Nord.html">
+                </map>
+            </td>
+            <td>
+                <img src="5.png"  width="400px" height="550px" usemap="#ONEPLUS 8PRO">
+                <map name="ONEPLUS 8PRO">
+                <area shape="rect" coords="0,0,438,610" alt="ONEPLUS 8PRO" href="One plus oh no.html">
+                </map>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="7.png" width="400px" height="550px" usemap="#ONEPLUS BULLETS WIRELESS">
+                <map name="ONEPLUS BULLETS WIRELESS">
+                <area shape="rect" coords="0,0,438,610" alt="ONEPLUS BULLETS WIRELESS" href="One plus oh no.html">
+                </map>
+            </td>
+            <td>
+                <img src="8.png" width="400px" height="550px" usemap="#ONEPLUS BUDS Z">
+                <map name="ONEPLUS BUDS Z">
+                <area shape="rect" coords="0,0,438,610" alt="ONEPLUS BUDS Z" href="One plus oh no.html">
+                </map>
+            </td>
+            <td>
+                <img src="9.png" width="400px" height="550px" usemap="#ONEPLUS BUDS">
+                <map name="ONEPLUS BUDS">
+                <area shape="rect" coords="0,0,438,610" alt="IPHONE SE" href="One plus oh no.html">
+                </map>
+            </td>
+        </tr>
+    </table>
+    </center>
+    <script>
+        var users=localStorage.getItem("currentName")
+        document.getElementById("cr").innerHTML = "Hello, " + users
+    </script>
+</html>

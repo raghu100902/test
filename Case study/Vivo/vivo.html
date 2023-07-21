@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <style>
+            .menu {
+              background-color: black;
+            }
+            
+            .menu a::after{
+            content: '';
+            
+            width: 0%;
+            
+            height: 3px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            transition: 0.75s;
+            
+            }
+            .menu::after{
+            content: '';
+            
+            width:100%;
+            
+            height: 2px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            }
+            .menu a:hover::after{
+             width: 100%;
+            }
+             .menu a:hover{
+               background-color: violet; font-size: x-large; 
+            }
+            
+            
+            </style>
+            </head>
+            <body style="background-image:url(bg4.jpeg);
+            background-size: 100% 100%;margin: 0px">
+             
+                
+            <div class="menu">
+              <table style="background-color:black;" cellspacing="20">
+                    <tr>
+                        <td style="width: 40px;"><img src="cayn1.PNG" alt="cayn logo"></td>
+                        <td><a href="../Home page/home.html"style="text-decoration:none"><span style="color: white; font-size: large";>HOME</span></a></td>
+                        <td><a href="../About Us/about us.html"style="text-decoration:none"><span style="color: white; font-size: large";>ABOUT US</span></a></td>
+                        <td><a href="../PRIVACY/privacy policy.html"style="text-decoration:none"><span style="color: white; font-size: large">PRIVACY POLICY</span></a></td>
+                        <td><a href="../LOGIN AND SIGNUP/login.html"style="text-decoration:none"><span style="color: white;font-size: large">LOGIN</span></a></td>
+                        <td><a href="../LOGIN AND SIGNUP/Sign up.html"style="text-decoration:none"><span style="color: white;font-size: large">SIGN UP</span></a></td>
+                        <TD style="width:250px ;"> </TD>
+                        <td><a href="" style = "text-decoration: none"><span id="cr" style="color: white;font-size: x-large"></span></a></td>
+                        <TD style="width: 0px"> </TD>
+                        <td><img src="cart.PNG" alt="add to cart" usemap="#ac"><map name="ac"><area shape="rect" coords="0,0,159,72" href="../Add to cart/addcart.html"></map></td>
+                 </tr></table>
+                </div> 
+ <br> <br>
+    <center><table cellspacing="40" border="0">
+        <caption><span style="font-weight:bolder ;font-family:Arial;font-size: 50px;color: blue;">VIVO</span></caption>
+        <tr>
+            <td>
+                <img src="v21.PNG" width="370px" height="500px" usemap="#v21">
+                <map name="v21">
+                <area shape="rect" coords="0,0,390,390" alt="V21" href="v21.html">
+                </map>
+            </td>
+            <td>
+                <img src="v20 pro.PNG" width="370px" height="500px" usemap="#v20 pro">
+                <map name="v20 pro">
+                <area shape="rect" coords="0,0,390,390" alt="V20 pro" href="v20 pro.html">
+                </map>
+            </td>
+            <td>
+                <img src="v20.PNG" width="370px" height="500px" usemap="#v20">
+                <map name="v20">
+                <area shape="rect" coords="0,0,390,390" alt="V20" href="V20.html">
+                </map>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="x60 pro+.PNG" width="370px" height="500px" usemap="#x60 pro+">
+                <map name="x60 pro+">
+                <area shape="rect" coords="0,0,390,390" alt="X60 pro+" href="x60 pro+.html">
+                </map>
+            </td>
+            <td>
+                <img src="x60 pro.PNG" width="370px" height="500px" usemap="#x60 pro">
+                <map name="x60 pro">
+                <area shape="rect" coords="0,0,390,390" alt="X60 pro" href="vivo oh no.html">
+                </map>
+            </td>
+            <td>
+                <img src="x60.PNG" width="370px" height="500px" usemap="#x60">
+                <map name="x60">
+                <area shape="rect" coords="0,0,390,390" alt="X60" href="vivo oh no.html">
+                </map>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="y51.PNG" width="370px" height="500px" usemap="#y51">
+                <map name="y51">
+                <area shape="rect" coords="0,0,390,390" alt="Y51" href="Y51.html">
+                </map>
+            </td>
+            <td>
+                <img src="y31.PNG"  width="370px" height="500px" usemap="#y31">
+                <map name="y31">
+                <area shape="rect" coords="0,0,390,390" alt="Y31" href="vivo oh no.html">
+                </map>
+            </td>
+            <td>
+                <img src="y30.PNG" width="370px" height="500px" usemap="#y30">
+                <map name="y30">
+                <area shape="rect" coords="0,0,390,390" alt="Y30" href="vivo oh no.html">
+                </map>
+            </td>
+        </tr>
+     
+    </table>
+    </center>
+    </body>
+    <script>
+        var users=localStorage.getItem("currentName")
+        document.getElementById("cr").innerHTML = "Hello, " + users
+    </script>
+</html>

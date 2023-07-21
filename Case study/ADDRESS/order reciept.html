@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order reciept</title>
+        <link rel="stylesheet" type="text/css" href="order reciept.css">
+    </head>
+    <body>
+        <div class="form">
+        <form >
+            <center><p><b>Order Reciept</b></p></center>
+            <pre>
+                
+<strong>   Name:</strong><strong id="name"> </strong>
+<strong>   Phone No:</strong><strong id="number"> </strong>
+<strong>   Address:</strong>  <strong id="add1"></strong>
+                   <strong id="add2"></strong>
+                   <strong id="dist"></strong>
+                   <strong id="state"></strong>
+                   <strong id="pin"></strong>
+
+<strong>   Ordered Date:</strong><strong id="date"></strong>
+                 <center>  <b id="price"></b>
+
+<button type="submit" onclick="window.print()"><b>Print</b></button>
+                </center>
+    
+            </pre>
+        </form>
+        </div>
+    </body>
+    <script>
+        var Name = localStorage.getItem("currentn")
+        document.getElementById("name").innerHTML = " " + Name
+        var num = localStorage.getItem("number")
+        document.getElementById("number").innerHTML = " " + num
+        var add1 = localStorage.getItem("add1")
+        var add2 = localStorage.getItem("add2")
+        var dist = localStorage.getItem("dist")
+        var state =localStorage.getItem("state")
+        var country = localStorage.getItem("country")
+        var pin = localStorage.getItem("pin")
+        document.getElementById("add1").innerHTML = " " + add1
+        document.getElementById("add2").innerHTML = " " + add2
+        document.getElementById("dist").innerHTML = " " + dist
+        document.getElementById("state").innerHTML = " " + state
+        document.getElementById("pin").innerHTML = " " + pin
+        var curdate=new Date()
+        document.getElementById("date").innerHTML = " " + curdate.toDateString()
+        var price=localStorage.getItem("currentPrice")
+        document.getElementById("price").innerHTML = " Total Amount: Rs " + price + "/-"
+
+    </script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>payment gateway</title>
+        <link rel="stylesheet" type="text/css" href="payment.css">
+    </head>
+
+    <script>
+         function yesnoCheck() {
+                
+                if (document.getElementById('netbank').checked) {
+                document.getElementById('listofbanks').style.visibility = 'visible';
+                } else {
+                        document.getElementById('listofbanks').style.visibility = 'hidden';
+                }
+                
+                if (document.getElementById('upi').checked) {
+                document.getElementById('upiId').style.visibility = 'visible'; 
+                } else {
+                    document.getElementById('upiId').style.visibility = 'hidden';
+                }
+              
+                   
+            }    
+    </script>
+    <body>
+        <div class="form">
+              
+        <form action="order reciept.html">
+            <center><p><b>PAYMENT GATEWAY</b></p></center> 
+            <pre>
+<center>
+<input required type="text" name="Enter your name" id="na" placeholder="Enter your name">
+<input required type="number" name="Enter your mobile number" id="num" placeholder="Enter your mobile number">
+<strong>Mode of payment:</strong><input required type="radio" name="same" id="netbank"  onclick="javascript:yesnoCheck();"><strong>Net Banking</strong><input required type="radio" name="same" id="upi"  onclick="javascript:yesnoCheck();"><strong>UPI</strong>
+
+<select name="select bank" id="listofbanks" style="visibility: hidden;"><option disabled selected value="" hidden>Select a bank</option><option>State Bank of India</option><option>Canara Bank</option><option>HDFC Bank</option><option>Karur Vysya Bank</option><option>South Indian Bank</option><option>Allahabad Bank</option><option>Popular Bank</option></select>
+<input required type="email" name="id" id="upiId" placeholder="Enter your UPI ID" style="visibility: hidden;">
+<p><b id="cr"></b></p>
+<button type="submit">pay</button><button type="reset">Reset</button>
+</center>
+            </pre>
+            </form>
+            </div>
+            </body>
+            <script>
+                var price=localStorage.getItem("currentPrice")
+                document.getElementById("cr").innerHTML = "Rs " + price + "/-"
+            </script>
+</html>
+
+

@@ -1,0 +1,300 @@
+<html>
+    <head>
+        <title>iPhone 12</title>
+        <link rel="stylesheet" href="reviews.css">
+        <style>
+            .menu {
+              background-color: black;
+            }
+            
+            .menu a::after{
+            content: '';
+            
+            width: 0%;
+            
+            height: 3px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            transition: 0.75s;
+            
+            }
+            .menu::after{
+            content: '';
+            
+            width:100%;
+            
+            height: 2px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            }
+            .menu a:hover::after{
+             width: 100%;
+            }
+             .menu a:hover{
+               background-color: violet; font-size: x-large; 
+            }
+            
+            
+            </style>
+            </head>
+            <script>
+                function billprice(){
+                localStorage.setItem("currentPrice",'71,900')
+                window.location.href="../ADDRESS/address.html"
+
+            }
+                function addcart(){
+        var users = localStorage.getItem("users") 
+        var user=JSON.parse(users||"[]")
+        var currentUser = localStorage.getItem("currentUser")
+        var cart = {"productName":"Iphone 12","productLink":window.location.href,"price":"₹71,900","image":"11.jpg"}
+        for(i=0;i<user.length;i++)
+        {
+            if (user[i].username===currentUser){
+                if(!Object.keys(user[i]).includes("cart")){
+                    user[i]["cart"]=[]
+                user[i]["cart"].push(cart)
+
+                }
+                else{
+                    var check = 0
+                    for(j=0;j<user[i]["cart"].length;j++){
+                        if(user[i]["cart"][j]["productName"]=="Iphone 12"){
+                            check = 1 
+                        }
+                    }
+                    if (check==0){
+
+                user[i]["cart"].push(cart)
+                 }
+                 else
+                 alert("Product is Already added to cart")
+                 }
+            }
+        }
+        localStorage.setItem("users",JSON.stringify(user))
+    }
+
+                function getReview(){
+                    var reviews = document.getElementById("userReviews").value
+                    var rating = document.querySelector('input[name="radio-btn"]:checked').value
+                    console.log(reviews,rating)
+                    var username = localStorage.getItem("currentUser")
+                    var name = localStorage.getItem("currentName")
+                    var reviewUserDetails = {"username":username,"name":name,"reviews":reviews,"rating":rating}
+                    var iphone12 = localStorage.getItem("iphone12")
+                    var reviewUser = JSON.parse(iphone12||"[]")
+                    reviewUser.push(reviewUserDetails)
+                    localStorage.setItem("iphone12",JSON.stringify(reviewUser))
+                    return true;
+                    }
+            
+            </script>
+            
+            <body style="margin: 0px">
+             
+                
+            <div class="menu">
+              <table style="background-color:black;" cellspacing="20">
+                    <tr>
+                        <td style="width: 40px;"><img src="cayn1.PNG" alt="cayn logo"></td>
+                        <td><a href="../Home page/home.html"style="text-decoration:none"><span style="color: white; font-size: large";>HOME</span></a></td>
+                        <td><a href="../About Us/about us.html"style="text-decoration:none"><span style="color: white; font-size: large";>ABOUT US</span></a></td>
+                        <td><a href="../PRIVACY/privacy policy.html"style="text-decoration:none"><span style="color: white; font-size: large">PRIVACY POLICY</span></a></td>
+                        <td><a href="../LOGIN AND SIGNUP/login.html"style="text-decoration:none"><span style="color: white;font-size: large">LOGIN</span></a></td>
+                        <td><a href="../LOGIN AND SIGNUP/Sign up.html"style="text-decoration:none"><span style="color: white;font-size: large">SIGN UP</span></a></td>
+                        <TD style="width:250px ;"> </TD>
+                        <td><a href="" style = "text-decoration: none"><span id="cr" style="color: white;font-size: x-large"></span></a></td>
+                        <TD style="width: 0px"> </TD>
+                        <td><img src="cart.PNG" alt="add to cart" usemap="#ac"><map name="ac"><area shape="rect" coords="0,0,159,72" href="../Add to cart/addcart.html"></map></td>
+                 </tr></table>
+                </div> 
+       <center> <iframe width="1515.55px" height="400px" src="https://www.youtube.com/embed/65JrtwtTOdc"></iframe></center>
+       <br>
+       <br>
+       <table cellspacing="50" border="0">         
+           <tr>
+                <td><pre><img src="11.jpg" alt="iPhone 12"><br>  <img src="22.jpg" onclick="addcart()">     <img src="23.jpg" onclick="billprice()"></pre></td>
+                <td style="height:700px;width:790px">
+                <span style="font-weight: bold;font-size: 70px;font-family: Arial, Helvetica, sans-serif;">APPLE iPhone 12 (Blue, 64 GB)</span>
+                <br><br><hr>
+                <span style="font-weight:lighter;font-size:20px;font-family: Arial, Helvetica, sans-serif">
+                    <b>M.R.P:</b><br><span style="color:red;font-weight: bold;font-size: 30px;">₹ 71,900.00   </span><del>₹ 79,900.00</del>
+                    <br><br><b>HIGHLIGHTS:</b>
+                    <ul type="disc">
+                        <li>64 GB ROM</li>
+                        <li>6.1 inch Super Retina XDR Display</li>
+                        <li>12MP + 12MP Rear Camera</li>
+                        <li>A14 Bionic Chip with Next Generation Neural Engine Processor</li>
+                    </ul></span><hr>
+<pre><span style="font-weight:lighter;font-size:20px;font-family: Arial, Helvetica, sans-serif"><b>Operating System:</b> IOS 14
+
+<b>Processor Type:</b> A14 Bionic Chip(5nm) with Next Generation Neural Engine
+
+<b>Front Camera:</b> 12MP
+
+<b>Memory:</b> 4GB RAM 
+
+<b>Battery:</b> 2815 mAH lithium-ion battery
+
+<b>Cellular Technology:</b> (5G,4G,3G,2G)
+
+<span style="font-size: smaller">[1 Year Manufacturer Warranty for Handset and 6 Months Warranty for In the Box Accessories]</span>
+</pre></span>
+                </td>
+           </tr>
+       </table>
+       <hr>
+       <p><h1><b><center><img src="21.PNG" width="1500px" height="135px"></center></b></h1></p>
+       <hr>
+       <ul><span style="font-size:x-large">
+        <li>10% off on ICICI Bank Credit Card transactions, up to ₹750. On Orders of ₹7500</li>
+        <li>12% off on ICICI Bank Debit and Credit Cards EMI transactions, up to ₹1200. On Orders of ₹7500</li>
+        <li>5% Unlimited Cashback on Cayn Axis Bank Credit Card</li>
+        <li>12% off on SBI Bank Debit and Credit Cards EMI transactions, up to ₹1200. On Orders of ₹7500</li>
+    </ul></span>
+    <p><span style="font-size: smaller">*Terms and conditions apply</span></p>
+    <section id="reviews">
+        <div class="heading">
+            <p style="font-family: Arial;font-size:30px;"><b>CUSTOMER REVIEWS</b></p>
+        </div>
+     
+     
+     
+        <div class="form">
+            <form onsubmit="return getReview()" action="">
+                <center>
+                <textarea id="userReviews" rows="10">Enter your review here</textarea></center>
+                <br> 
+                <div class="rad">
+                <label> Your Rating: </label>
+                </div>
+                <div class="rad">
+                <input type = "radio" name="radio-btn" id="radio1" value="1">
+                <label for="radio1">1</label></div>
+                <div class="rad">
+                <input type = "radio" name="radio-btn" id="radio2" value="2">
+                <label for="radio2">2</label></div>
+                <div class="rad">
+                <input type = "radio" name="radio-btn" id="radio3" value="3">
+                <label for="radio3">3</label></div>
+                <div class="rad">
+                <input type = "radio" name="radio-btn" id="radio4" value="4">
+                <label for="radio4">4</label></div>
+                <div class="rad">
+                <input type = "radio" name="radio-btn" id="radio5" value="5">
+                <label for="radio5">5</label></div>
+                
+                <div style="padding: 25px 0px 0px 0px">
+                    <center>
+                <button required type ="submit"  >SUBMIT</button></center>
+                 </div>
+                
+              </form>
+            </div>
+            <center>
+           
+                <table class="xtra" id="table" border="0">
+     <br><br>
+     </table>
+     </center>
+     
+     </section>
+     
+     </body>
+     
+     <script>
+     var users=localStorage.getItem("currentName")
+     document.getElementById("cr").innerHTML = "Hello, " + users
+     var reviewTable = document.getElementById("table")
+     var revbox = document.createElement("div")
+     revbox.className="revbox"
+     var iphone_12 = localStorage.getItem("iphone12")
+     var review_User = JSON.parse(iphone_12||"[]")
+     console.log(review_User)
+     var i=0;
+     loop1:
+     while(i<review_User.length){
+      var cell = document.createElement("tr")
+      loop2:  
+      for(j=0;j<3;j++) {       
+             var cellItem = document.createElement("td")
+             var box = document.createElement("div")
+             box.className="box"
+             var profile = document.createElement("div")
+             profile.className="profile"
+             var pfp = document.createElement("div")
+             pfp.className="pfp"
+             var profileImage = document.createElement("img")
+             profileImage.src = "p3.jpg"
+             pfp.appendChild(profileImage)
+             var divuser = document.createElement("div")
+             divuser.className="username"
+             var strong = document.createElement("strong")
+             strong.innerHTML=review_User[i]["name"]
+             var span = document.createElement("span")
+             var bold = document.createElement("b")
+             var head = document.createElement("h5")
+             head.innerHTML = '@' + review_User[i]["username"]
+             bold.appendChild(head)
+             span.appendChild(bold)
+             divuser.appendChild(strong)
+             divuser.appendChild(span) 
+             var pre = document.createElement("pre")
+             var starImage = document.createElement("img")
+            if (review_User[i]["rating"]==1){
+                starImage.src = "star1.png"}
+            else if (review_User[i]["rating"]==2){
+                starImage.src = "star2.png"} 
+            else if (review_User[i]["rating"]==3){
+                starImage.src = "star3.png"} 
+            else if (review_User[i]["rating"]==4){
+                starImage.src = "star.png"} 
+            else if (review_User[i]["rating"]==5){
+                starImage.src = "star5.png"} 
+     
+            pre.appendChild(starImage)
+            profile.appendChild(pfp)
+            profile.appendChild(divuser)
+            profile.appendChild(pre)
+     
+            var comment = document.createElement("div")
+             comment.className="comments"
+            
+             var br = document.createElement("br")
+             var p = document.createElement("p")
+             var b = document.createElement("b")
+             b.innerHTML= review_User[i]["reviews"]
+             p.appendChild(b)
+             comment.appendChild(br)
+             comment.appendChild(p)
+             box.appendChild(profile)
+             box.appendChild(comment)
+             cellItem.appendChild(box)
+             cell.appendChild(cellItem)
+             i = i+1
+             if(i>=review_User.length){
+                 break loop2
+             }
+            }
+            revbox.appendChild(cell)
+     }
+     reviewTable.appendChild(revbox)
+            
+     </script>
+   
+    <script>
+        var users=localStorage.getItem("currentName")
+        document.getElementById("cr").innerHTML = "Hello, " + users
+    </script>
+</html>

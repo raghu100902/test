@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add to cart</title>
+</head>
+<body>
+    <table id="table" style="background-color:white;" cellspacing="20" border="10px" >
+     
+          <!-- <tr>
+            <td style="width: 120px; border:0px;"><img width="100px" height="120px" src="../OFFERS/DELL XPS 9310.jpg" alt="cayn logo"></td>
+            <td style="border: 0px;"></td>
+            <td style="width: 700px;  border: 0px;"><a href="../APPLE/apple watch 6 gps.html"style="text-decoration:none"><span style="color:black; font-size: xx-large"><b><center>Apple Watch 6 GPS</center></b></span></a></td>
+            <td style="width: 300px; border: 0px;"> <span style="color:black; font-size: xx-large"><b><center>Quantity</center></b></span><center><input onchange="priceUpdate(this.id)"  min="0" max="10" style="width: 60px;height: 50px;font-size: xx-large;" type="number" value="1" id="qty"></center></td>
+            <td style="width: 300px; border: 0px;"><span style="color: black;font-size: xx-large"><b><center><p id="price">Price:₹599</p></center></b></span></td>
+          </tr> -->
+        </table> 
+    
+</body>
+<script>
+    function priceUpdate(productID){
+        var id = localStorage.getItem("")
+        var users = localStorage.getItem("users") 
+        var user=JSON.parse(users||"[]")
+        var currentUser = localStorage.getItem("currentUser")
+        var qty = document.getElementById(productID).value
+        if(qty==0){
+            document.getElementById(productID).parentElement.parentElement.parentElement.remove()
+            for(i=0;i<user.length;i++)
+        {
+            if (user[i].username===currentUser){
+                if(Object.keys(user[i]).includes("cart")){
+                    for(j=0;j<user[i]["cart"].length;j++){
+                   if (user[i]["cart"][j]["productName"] == productID){
+                       user[i]["cart"].splice(j,1)
+                       console.log(user)
+                        }
+                    }
+                }
+            }
+            localStorage.setItem("users",JSON.stringify(user))
+        }}
+        
+         }
+     var users = localStorage.getItem("users") 
+        var user=JSON.parse(users||"[]")
+        var currentUser = localStorage.getItem("currentUser")
+        for(i=0;i<user.length;i++)
+        {
+            if (user[i].username===currentUser){
+                if(Object.keys(user[i]).includes("cart")){
+                    for(j=0;j<user[i]["cart"].length;j++){
+                    var cartProducts = document.getElementById(table)
+                    var cartRow =   ' <tr class="'+user[i]["cart"][j]["productName"]+'"><td style="width: 120px; border:0px;"><img width="100px" height="120px" src="'+user[i]["cart"][j]["image"]+'" alt="cayn logo"></td><td style="border: 0px;"></td><td style="width: 700px;  border: 0px;"><a href="'+user[i]["cart"][j]["productLink"]+'"style="text-decoration:none"><span style="color:black; font-size: xx-large"><b><center>'+user[i]["cart"][j]["productName"]+'</center></b></span></a></td><td style="width: 300px; border: 0px;"> <span style="color:black; font-size: xx-large"><b><center>Quantity</center></b></span><center><input onchange="priceUpdate(this.id)" min="0" max="1" style="width: 60px;height: 50px;font-size: xx-large;" type="number" value="1" id="'+user[i]["cart"][j]["productName"]+'"></center></td><td style="width: 300px; border: 0px;"><span style="color: black;font-size: xx-large"><b><center ><p>Price:'+user[i]["cart"][j]["price"]+'</p></center></b></span></td></tr>'
+
+                     table.insertAdjacentHTML('beforeend',cartRow)
+                    }
+
+                }
+            }
+        }
+</script>
+</html>

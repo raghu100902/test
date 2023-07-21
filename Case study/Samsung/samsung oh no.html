@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Out Of Stock</title>
+        <style>
+            .menu {
+              background-color: black;
+            }
+            
+            .menu a::after{
+            content: '';
+            
+            width: 0%;
+            
+            height: 3px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            transition: 0.75s;
+            
+            }
+            .menu::after{
+            content: '';
+            
+            width:100%;
+            
+            height: 2px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            }
+            .menu a:hover::after{
+             width: 100%;
+            }
+             .menu a:hover{
+               background-color: violet; font-size: x-large; 
+            }
+            
+            
+            </style>
+            </head>
+            <body style="background-image:url(bg4.jpeg);
+            background-size: 100% 100%;margin: 0px">
+             
+                
+            <div class="menu">
+              <table style="background-color:black;" cellspacing="20">
+                    <tr>
+                        <td style="width: 40px;"><img src="cayn1.PNG" alt="cayn logo"></td>
+                        <td><a href="../Home page/home.html"style="text-decoration:none"><span style="color: white; font-size: large";>HOME</span></a></td>
+                        <td><a href="../About Us/about us.html"style="text-decoration:none"><span style="color: white; font-size: large";>ABOUT US</span></a></td>
+                        <td><a href="../PRIVACY/privacy policy.html"style="text-decoration:none"><span style="color: white; font-size: large">PRIVACY POLICY</span></a></td>
+                        <td><a href="../LOGIN AND SIGNUP/login.html"style="text-decoration:none"><span style="color: white;font-size: large">LOGIN</span></a></td>
+                        <td><a href="../LOGIN AND SIGNUP/Sign up.html"style="text-decoration:none"><span style="color: white;font-size: large">SIGN UP</span></a></td>
+                        <TD style="width:250px ;"> </TD>
+                        <td><a href="" style = "text-decoration: none"><span id="cr" style="color: white;font-size: x-large"></span></a></td>
+                        <TD style="width: 0px"> </TD>
+                        <td><img src="cart.PNG" alt="add to cart" usemap="#ac"><map name="ac"><area shape="rect" coords="0,0,159,72" href="../Add to cart/addcart.html"></map></td>
+                 </tr></table>
+                </div> 
+    <table border="10">
+        <tr>
+          <td style="width: 800px; height:650px"><center><img src="oos.jpg"></center></td> 
+            <td style="width: 800px; height:650px">
+    <center><br><br><br><br><h1><b><span style="font-size: 100px;color: red;">Oh Noo!!!</span></b></h1><br>
+    <h1>We regret to inform you that this<br>    product is out of stock.<br>
+    But don't worry!<br>
+    We will inform you once the product is available.</h1><br>
+    </center>
+    <center>
+    <form method="GET" action="Samsung.html" >
+        <input style="width:200px; height: 70px; background-color:rgb(107, 201, 233); font-size: large;" type="submit" name="prbu" value="previous page">
+    </form></center></td>
+    </tr>
+    </table>
+    </body>
+    <script>
+      var users=localStorage.getItem("currentName")
+      document.getElementById("cr").innerHTML = "Hello, " + users
+  </script>
+</html>
